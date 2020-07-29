@@ -1,0 +1,78 @@
+page{
+  color: #333;
+  font-size: 26rpx;
+}
+.top-view{
+  width: 750rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding:50rpx;
+}
+.top-view .left{
+  width: 340rpx;
+  margin-left: auto;
+  margin-right: 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.underline{
+  text-decoration: underline;
+  color: rgba(71, 219, 207, 0.726);
+}
+.text-box{
+  width: 80rpx;
+}
+.item-small-img{
+  margin-left: 50rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 5rpx;
+}
+.context-view{
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+  box-sizing: border-box;
+}
+.item-view{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+  align-items: center;
+}
+.short-url-view {
+  width: 300rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+  background-color: #eee;
+  color: #333;
+  border-radius: 4rpx;
+  font-size: 22rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy-btn {
+  font-size: 24rpx;
+  border-radius: 40rpx;
+  width: 150rpx;
+  height: 50rpx;
+  background-color: #519a73;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30rpx;
+}
+.warn{
+  color: red;
+  text-decoration: underline;
+}
+.delete{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 40rpx;
+}

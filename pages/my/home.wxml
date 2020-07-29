@@ -1,0 +1,24 @@
+<view class="top-view">
+  <text>转换历史</text>
+  <view class="left">
+    <view class="text-box">
+      <text class="underline" wx:if="{{!(pageIndex+1 === 1)}}" bindtap="prePage">上一页</text>
+    </view>
+    <text class="">第{{pageIndex+1}}页/共{{totalNum}}页</text>
+    <view class="text-box">
+      <text class="underline" wx:if="{{!(pageIndex+1 === totalNum)}}" bindtap="nextPage">下一页</text>
+    </view>
+
+  </view>
+</view>
+<view class="context-view">
+  <view wx:for="{{historyList}}" wx:key="index" class="item-view">
+    <image src="{{item.imgurl}}" class="item-small-img" bindtap="preview" data-url="{{item.imgurl}}"></image>
+    <view class="short-url-view">
+      <text selectable="{{true}}">{{item.shorturl}}</text>
+    </view>
+    <view class="copy-btn" bindtap="copy" data-url="{{item.shorturl}}">一键复制</view>
+    <image class="delete" src="/images/mini_icon/delete.png" bindtap="deleteImg" data-index="{{index}}" data-id="{{item.id}}" />
+
+  </view>
+</view>

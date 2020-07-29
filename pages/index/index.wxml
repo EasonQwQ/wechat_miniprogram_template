@@ -1,0 +1,26 @@
+<image class="item-img" src="/images/add_pic.png" bindtap="uploadImg" wx:if="{{images.length === 0}}"></image>
+
+<image src="{{item.filePath}}" class="item-img" wx:for="{{images}}" wx:key="id"></image>
+
+<button bindtap="uploadImg" class="btn" wx:if="{{images.length === 0}}">添加图片</button>
+<view  wx:if="{{images.length !== 0 && !showShortUrl }}">
+<button bindtap="changeImg" class="btn">更换图片</button>
+<button bindtap="convertToShortURL" class="btn" >转成短链接</button>
+</view>
+
+<button bindtap="changeImg" class="btn" wx:if="{{showShortUrl}}">更换图片</button>
+<view class="context-view" wx:if="{{showShortUrl}}">
+  <text class="top-text">您的图片短链接是:</text>
+  <view class="short-url-view" >
+    <text selectable="{{true}}" >{{shortUrl}}</text>
+  </view>
+  <view class="copy-btn" bindtap="copy">一键复制</view>
+</view>
+<view class="share-view">
+  <button open-type="share" class="theme-color share-btn" size="mini">
+    <image src="/images/mini_icon/wechat.png" class="img"></image>
+    分享给微信好友
+    </button>
+</view>
+<view class="footer">
+短链接有效期3个月</view>

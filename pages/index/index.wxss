@@ -1,0 +1,135 @@
+page {
+  display: flex;
+  width: 750rpx;
+  box-sizing: border-box;
+  padding: 50rpx;
+  padding-top: 200rpx;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-pic {
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.images-content {
+  width: 600rpx;
+  height: 600rpx;
+  background-color: #aaa;
+  margin: 0 auto;
+}
+
+.img-view {
+  display: flex;
+  width: 750rpx;
+  flex-flow: wrap;
+  flex-direction: row;
+}
+
+.item-img {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.btn {
+  margin-top: 20rpx;
+  color: #333;
+}
+
+.text-tip{
+  margin-top: 20rpx;
+  text-decoration: underline;
+  color: #333;
+  font-size: 26rpx;
+}
+.context-view {
+  margin-top: 50rpx;
+  width: 500rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-text {
+  color: rgb(94, 88, 88);
+  font-size: 25rpx;
+}
+
+.short-url-view {
+  width: 400rpx;
+  height: 50rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  background-color: #eee;
+  color: #333;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-btn {
+  font-size: 24rpx;
+  border-radius: 40rpx;
+  width: 170rpx;
+  height: 50rpx;
+  background-color: #519a73;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx auto
+}
+.copy-btn.on {
+  font-size: 24rpx;
+  border-radius: 40rpx;
+  width: 170rpx;
+  height: 50rpx;
+  background-color: #fff;
+  color: #519a73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx auto
+}
+.footer{
+  position: fixed;
+  bottom: 20rpx;
+  font-size: 25rpx;
+  width: 750rpx;
+  display: flex;
+  justify-content: center;
+  color: #aaa;
+}
+.share-view{
+  position: fixed;
+  bottom: 0rpx;
+  width: 750rpx;
+  height: 150rpx;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: center;
+}
+.share-btn{
+  width: 400rpx;
+  height: 50rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+button[size='mini']{
+width: 400rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.share-view .img{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
